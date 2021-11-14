@@ -1,8 +1,23 @@
+@media (min-width: 1440px) {
+    .image{
+
+    }
+}
+
+body{ 
+    margin-top: 170px;
+    margin-left: 450px;
+    background-color: hsl(233, 47%, 7%);
+}
+
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr;
-
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 3px;
+    max-width: 1000px;
 }
 
 .box-0 {
@@ -10,11 +25,10 @@
     grid-column-end: 2;
 
     grid-row-start: 2;
-    grid-row-end: 2;
+    grid-row-end: span 3;
 
     grid-area: span 3;
-    place-self: center;
-
+    
 }
 
 .box-1 {
@@ -23,7 +37,6 @@
 
     grid-row-start: 1;
     grid-row-end: 1;
-    grid-area: 1;
 }
 
 .box-2 {
@@ -32,7 +45,9 @@
 
     grid-row-start: 1;
     grid-row-end: 1;
+
     grid-area: 2;
+
 }
 
 .box-3 {
@@ -43,5 +58,44 @@
     grid-row-end: 1;
 
     grid-area: 3;
+}
 
+h1 {
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+
+p {
+    margin-bottom: 20px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+.highlight{
+    color: hsl(277, 64%, 61%);
+}
+
+.numbers {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.reason {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
 }
